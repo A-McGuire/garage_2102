@@ -25,7 +25,6 @@ class OwnerTest < MiniTest::Test
     owner_1 = Owner.new('Regina George', 'Heiress')
 
     owner_1.buy('1967 Green Ford Mustang')
-    
     assert_equal 1, owner_1.cars.count #todo refactor for greater accuracy
   end
   
@@ -35,7 +34,7 @@ class OwnerTest < MiniTest::Test
     owner_1.buy('1967 Green Ford Mustang')
     owner_1.buy('2001 Silver BMW 3-Series')
     
-    assert_equal 2, owner_1.cars.count
+    assert_equal 2, owner_1.cars.count #todo
   end
   
   def test_buy_vintage_car
@@ -45,7 +44,7 @@ class OwnerTest < MiniTest::Test
     owner_1.buy('2001 Silver BMW 3-Series')
     owner_1.buy('1963 Red Chevrolet Corvette')
     
-    assert_equal 2, owner_1.vintage_cars.count
+    assert_equal 2, owner_1.vintage_cars.count #todo 
   end
 end
 
